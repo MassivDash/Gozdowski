@@ -367,13 +367,26 @@ body {
     background: #000;
 }
 
-.site-nav-holder {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10vw;
+@media (max-width:650px) {
+    .site-nav-holder {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10vw;
+    
+    }
+}
 
+@media (min-width: 650px) {
+    .site-nav-holder {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 4vw;
+    
+    }
 }
 
 .site-nav-left {
