@@ -8,7 +8,8 @@ Slider shows top 3 posts
 
 
 
-![screenshot-desktop](https://spaceout.pl/external/gozdowskiTheme.jpg)
+![Mobile-desktop](https://blog.spaceout.pl/content/images/2019/03/gozodowskiTheme.jpg)
+![screenshit-desktop](https://blog.spaceout.pl/content/images/2019/03/Screenshot_2019-03-31-Gozdowski-1--2.jpg)
 
 &nbsp;
 
