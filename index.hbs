@@ -90,6 +90,7 @@ default.hbs template --}}
 </main>
 
 {{#contentFor "scripts"}}
+    <script  type="text/javascript" src="{{asset "built/navigation.js"}}"></script>
     <script  type="text/javascript" src="{{asset "built/slick.min.js"}}"></script>
     <script  type="text/javascript" src="{{asset "built/sliderControl.js"}}"></script>
 {{/contentFor}}
