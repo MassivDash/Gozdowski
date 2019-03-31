@@ -1,0 +1,43 @@
+<nav class="site-nav">
+    <div class="site-nav-holder">
+
+    
+    <div class="site-nav-brand">
+        <h1 class="site-title">
+                {{#if @site.logo}}
+                    <img class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" />
+                {{else}}
+                    {{@site.title}}
+                {{/if}}
+            </h1>
+    </div>
+    <div class="site-nav-left">
+        <div class="social-links">
+            {{#if @site.facebook}}
+                <a class="social-link social-link-fb" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
+            {{/if}}
+            {{#if @site.twitter}}
+                <a class="social-link social-link-tw" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
+            {{/if}}
+        </div>
+    </div>
+    <div class="site-nav-right site-nav-open">
+        
+        {{#if @site.navigation}}
+            {{navigation}}
+        {{/if}}
+    </div>
+    <div id="menu-toggle">
+  <div id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div id="cross">
+    <span></span>
+    <span></span>
+  </div>
+</div>
+</div>
+    
+</nav>

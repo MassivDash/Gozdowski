@@ -1,0 +1,91 @@
+{{!< default}}
+{{!-- The tag above means: insert everything in this file into the {body} of the
+default.hbs template --}}
+
+{{> header background=@site.cover_image}}
+{{> site-nav}}
+{{!--Special header.hbs partial to generate the <header> tag--}}
+<div class="slider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1}'>
+    {{#foreach posts limit="3"}}
+        <div>
+            <div class="slider-holder-wrapper">
+                <div class="slider-header">
+                    {{#if feature_image}}
+                        <a class="slider-image-link" href="{{url}}">
+                            {{!-- This is a responsive image, it loads different sizes depending on device
+                            https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433
+                            --}}
+                            <img
+                                class="slider-image"
+                                srcset="{{img_url feature_image size="
+                                xl"}} 300w,
+                            {{img_url feature_image size="
+                                xl"}} 600w,
+                            {{img_url feature_image size="
+                                xl"}} 1000w,
+                            {{img_url feature_image size="
+                                xl"}} 2000w"
+                                sizes="(max-width: 1920px) 1920px, 1920px"
+                                src="{{img_url feature_image size="
+                                xl"}}"
+                                alt="{{title}}"/>
+                        </a>
+                    {{/if}}
+                    <article class="slider-info-holder fadeOut">
+
+                        <div class="slider-info-title fadeOut">
+                            <h2>{{title}}</h2>
+                            {{#if primary_tag}}
+                                <span class="slider-info-tags">{{primary_tag.name}}</span>
+                            {{/if}}
+                        </div>
+                        <div class="slider-info-excerpt fadeOut">
+                            <p>{{excerpt words="33"}}</p>
+                            <button class="slider-info-readmore fadeOut">
+                                <a href="{{url}}">Read More</a>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+    {{/foreach}}
+</div>
+<div class="slider-controls">
+    <div class="slider-controls-wrapper">
+
+    
+    {{#foreach posts limit="3"}}
+        <button class="slider-button-{{@index}} sliderButton">
+            <h3>{{title}}</h3>
+            {{#if authors}}
+                {{#foreach authors}}
+                    <a href="{{url}}" title="{{name}}" class="slider-author"> {{name}}</a>
+                {{/foreach}}
+    {{/if}}
+        </button>
+{{/foreach}}
+</div>
+</div>
+
+<h2 class="site-description">{{@site.description}}</h2>
+</header>
+
+{{!-- The main content area --}}
+<main id="site-main" class="site-main outer">
+<div class="inner">
+
+    <div class="post-feed">
+        {{#foreach posts}}
+
+            {{!-- The tag below includes the markup for each post - partials/post-card.hbs
+            --}}
+            {{> "post-card"}}
+
+        {{/foreach}}
+    </div>
+
+</div>
+</main>
+
