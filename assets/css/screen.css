@@ -373,7 +373,7 @@ body {
         width: 100%;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 10vw;
+        padding: 10px 4vw;
     
     }
 }
@@ -384,7 +384,7 @@ body {
         width: 100%;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 4vw;
+        padding: 10px 10vw;
     
     }
 }
