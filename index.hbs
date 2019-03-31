@@ -89,3 +89,8 @@ default.hbs template --}}
 </div>
 </main>
 
+{{#contentFor "scripts"}}
+    <script  type="text/javascript" src="{{asset "built/slick.min.js"}}"></script>
+    <script  type="text/javascript" src="{{asset "built/sliderControl.js"}}"></script>
+{{/contentFor}}
+
