@@ -556,6 +556,15 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
         font-size: 19px;
         transition: 0.5s ease-in;
         transition-delay: 0.2s;
+        white-space: nowrap; 
+        overflow-x: auto; 
+        -webkit-overflow-scrolling: touch; 
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    .site-nav-right::-webkit-scrollbar {
+        display: none; 
+
     }
     .site-nav-open {
         transform: translateX(100vw);
@@ -2722,7 +2731,6 @@ Usage (In Ghost editor):
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        flex-wrap: wrap;
         z-index: 1;
         background-color: #00000080;
         width: 100%;
@@ -3064,7 +3072,7 @@ Usage (In Ghost editor):
         color: #FFF;
         letter-spacing: 1px;
         margin: 0 0 0.625rem;
-        font-size: 7.25rem;
+        font-size: 4.4vw;
         font-family: Oswald, sans-serif;
         font-weight: 400;
         text-transform: uppercase;
@@ -3171,7 +3179,7 @@ Usage (In Ghost editor):
     font-family: Montserrat;
     color: #FFF;
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     min-height: 60px;
 }
 

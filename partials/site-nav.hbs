@@ -11,7 +11,11 @@
                 {{/if}}
             </h1>
     </div>
-    <div class="site-nav-left">
+    <div class="site-nav-right site-nav-open">
+        
+        {{#if @site.navigation}}
+            {{navigation}}
+        {{/if}}
         <div class="social-links">
             {{#if @site.facebook}}
                 <a class="social-link social-link-fb" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
@@ -20,12 +24,6 @@
                 <a class="social-link social-link-tw" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
             {{/if}}
         </div>
-    </div>
-    <div class="site-nav-right site-nav-open">
-        
-        {{#if @site.navigation}}
-            {{navigation}}
-        {{/if}}
     </div>
     <div id="menu-toggle">
   <div id="hamburger">
