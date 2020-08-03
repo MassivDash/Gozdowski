@@ -63,7 +63,6 @@ $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
   $('.slider-info-readmore').addClass('fadeOut');
   $(currentButton).removeClass('active');
         $(nextButton).addClass('active');
-  console.log(nextSlide, currentSlide);
       });
 
       $('.slider').on('afterChange', function(){

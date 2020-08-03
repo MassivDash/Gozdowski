@@ -1,7 +1,7 @@
 # Gozdowski
 
 The [spaceout.pl](https://spaceout.pl) ghost theme, built upon the best practices of casper theme. 
-Ghost V2
+Ghost V3
 
 #Additions 
 Slider shows top 3 posts

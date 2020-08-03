@@ -1,11 +1,11 @@
 {
     "name": "gozdowski",
-    "description": "Ulitmo theme from spaceout.pl",
-    "demo": "https://gozdowskionline.pl",
-    "version": "1.0.1",
+    "description": "Gozdowski theme from spaceout.pl",
+    "demo": "https://gozdowskitheme.spaceout.pl",
+    "version": "1.1.0",
     "engines": {
-        "ghost": ">=2.0.0",
-        "ghost-api": "v2"
+        "ghost": ">=3.0.0",
+        "ghost-api": "v3"
     },
     "license": "MIT",
     "scripts": {
@@ -40,18 +40,20 @@
     },
     "bugs": "https://github.com/MassivDash/gozdowski/issues",
     "devDependencies": {
-        "@tryghost/release-utils": "0.3.1",
-        "autoprefixer": "9.5.0",
-        "beeper": "1.1.1",
+        "@tryghost/release-utils": "0.6.3",
+        "autoprefixer": "9.8.6",
+        "beeper": "2.0.0",
         "cssnano": "4.1.10",
-        "gscan": "2.3.0",
-        "gulp": "^4.0.0",
-        "gulp-livereload": "4.0.1",
+        "gscan": "^3.5.5",
+        "gulp": "4.0.2",
+        "gulp-concat": "2.6.1",
+        "gulp-livereload": "4.0.2",
         "gulp-postcss": "8.0.0",
         "gulp-uglify": "3.0.2",
-        "gulp-zip": "4.2.0",
-        "postcss-color-function": "4.0.1",
-        "postcss-custom-properties": "8.0.9",
+        "gulp-zip": "5.0.2",
+        "inquirer": "7.3.3",
+        "lodash": "^4.17.19",
+        "postcss-color-mod-function": "3.0.3",
         "postcss-easy-import": "3.0.0",
         "pump": "3.0.0"
     },
